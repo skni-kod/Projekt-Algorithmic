@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-size: 50px;
+    background-image: url('../images/welcome-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header {
+    display: flex;
+}
+
+#logo {
+    margin: 20px;
+    flex: 1;
+    font-size: 40px;
+    color: white;
+    border: 1px solid;
+}
+
+.nav-button {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid;
+    text-align: center;
+    display: inline-block;
+}
+
+#welcome-container {
+    border: 1px solid;
+    width: 900px;
+    height: 200px;
+}
+
+#welcome-text {
+    border: 1px solid;
+    color: white;
+    font-size: 110px;
+    font-weight: bolder;
+    margin: 80px 600px 0 300px;
+}
+
+#welcome-subtext > ul > li {
+    display: inline-block;
+    border: 1px solid;
+}
