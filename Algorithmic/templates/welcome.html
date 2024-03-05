@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome :)</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+{% extends "master.html" %}
 
-</head>
-<body>
-<div id="header">
-    <div id="logo">
-        Algo<br>rithmic
-    </div>
-    <div class="nav-button">Home</div>
-    <div class="nav-button">About</div>
-    <div class="nav-button">Contact</div>
-    <div style="clear: both"></div>
-</div>
+{% block title %}
+    Welcome :)
+{% endblock %}
 
-<div id="welcome-container">
-    <div id="welcome-text">
-        Algorithmic
-    </div>
+{% block content %}
+    <div id="welcome-container">
+        <div id="welcome-text">
+            Algorithmic
+        </div>
 
-    <div id="welcome-subtext">
+        <div id="welcome-subtext">
             <ul>
                 <li>experience</li>
                 <li>exercise</li>
                 <li>explore</li>
             </ul>
+        </div>
+        <div id="welcome-button">
+            <div id="go-button">
+                <a href="{% url 'register' %}">
+                    Start your journey
+                </a>
+            </div>
+        </div>
     </div>
-</div>
-
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            Algo<br>rithmic
+        </div>
+        <div class="nav-button"><a href="{% url 'welcome' %}">Home</a></div>
+        <div class="nav-button">About</div>
+        <div class="nav-button">Contact</div>
+        <div style="clear: both"></div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
