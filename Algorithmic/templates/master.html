@@ -8,11 +8,14 @@
 <body>
     <div id="header">
         <div id="logo">
-            Algo<br>rithmic
+            <a href="{% url 'welcome' %}">
+                Algo<br>rithmic
+            </a>
         </div>
         <div class="nav-button"><a href="{% url 'welcome' %}">Home</a></div>
-        <div class="nav-button">About</div>
-        <div class="nav-button">Contact</div>
+        <div class="nav-button"><a href="{% url 'welcome' %}">About</a></div>
+        <div class="nav-button"><a href="{% url 'welcome' %}">Contact</a></div>
+        <div class="nav-button"><a href="{% url 'login_user' %}">Login</a></div>
         <div style="clear: both"></div>
     </div>
     {% block content %}

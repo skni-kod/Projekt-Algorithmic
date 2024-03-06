@@ -26,6 +26,7 @@ a {
 }
 
 .nav-button {
+    flex: 1;
     margin-top: 40px;
     margin-left: 100px;
     padding-left: 10px;
@@ -39,7 +40,10 @@ a {
 #welcome-container {
     margin: 80px 600px 0 300px;
     text-align: center;
-    border: 1px solid;
+}
+
+#welcome-container > form > p {
+    font-size: 24px;
 }
 
 #welcome-text {
