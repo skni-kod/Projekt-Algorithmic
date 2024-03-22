@@ -37,12 +37,12 @@ a {
     display: inline-block;
 }
 
-#welcome-container {
+#main-container {
     margin: 80px 600px 0 300px;
     text-align: center;
 }
 
-#welcome-container > form > p {
+#main-container > form > p {
     font-size: 24px;
 }
 
@@ -77,7 +77,7 @@ a {
     border-radius: 22px;
     font-size: 25px;
     font-weight: bolder;
-    color: #154629;
+    color: #0d3f1f;
     margin: 80px 180px 0 180px;
     flex: 1;
     padding: 30px 0 30px 0;
@@ -88,4 +88,12 @@ a {
 #go-button:hover {
     background-image: linear-gradient(to bottom, #1f8049, #2fd57e);
     color: #123a21;
+}
+
+input {
+    background-color: #6c6c6c;
+    color: black;
+    border: 3px solid #7e7e7e;
+    border-radius: 5px;
+
 }
